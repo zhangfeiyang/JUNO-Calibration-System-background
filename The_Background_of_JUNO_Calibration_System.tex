@@ -103,8 +103,8 @@ And the extra introduced background events will distort the reactor neutrino spe
 
 The background is mainly from cosmogenic and nature radioactive isotopes.
 In the LS, the interaction of energetic cosmic muons with C-12 will produce radioactive isotopes like Li-9, He-8, B-12 and so on.
-The radioactive isotope is not stable and will decay to emission alpha, beta and gamma particles.
-Especially for Li-9 and He-8, they can emission both a beta and a neutrino, just like a IBD signal, which will significantly influence the efficiency of IBD selection.  
+The radioactive isotope is not stable and will decay to emit alpha, beta and gamma particles.
+Especially for Li-9 and He-8, they can emit both a beta and a neutrino, just like a IBD signal, which will significantly influence the efficiency of IBD selection.  
 The other background source, nature radioactive isotopes is from kinds of material used in the experiment.
 The isotopes mainly include U-238, Th-232, and K-40, which have long-lived time at billion years level.
 The radioactive material includes LS, acrylic, stainless steel, PMT and material from calibration system.
@@ -190,10 +190,34 @@ The USS includes cables, which is close the Acrylic inner sphere, with total len
 \section{Radioactive background}
 \subsection{Potential background}
 
+The isotopes we should consider in background estimation include 
+$^{238}U$, $^{232}Th$, $^{40}K$, $^{137}Cs$, Radon, and Kr.
+Among them, $^{238}U$, $^{232}Th$ and $^{40}K$ are long-lived isotopes with billion years life time,
+so the rate of decay is stable within 20 years running.
+$^{238}U$ is one isotope of uranium in nature with a abundance of 99\%.
+The life time of $^{238}U$ is about 4.47 $\times10^{9}$ years.
+Besides $^{238}U$ decay, the daughter isotope is also not stable and will decay, 
+which should be considered during the background calculation.
+And a series of daughter isotopes construct a decay chain.
+Beginning with naturally occurring $^{238}U$, 
+And life time of the daughter isotope is pretty short compared with $^{238}U$.
+So in the equilibrium state of decay, the rate of every daughter isotope should be equal to the rate of $^{238}U$ decay.
+$^{232}Th$ is one isotope of thorium, with abundance almost 100\%, life time 1.4 $\times10^{10}$ years.
+Just similar to $^{238}U$, $^{232}Th$ also has a decay chain.
+$^{40}K$ is one of potassium isotopes with life time 1.25 $\times10^{9}$ years, abundance 0.012\%.
+Different from $^{238}U$ and $^{232}Th$, $^{40}K$ doesn't have decay chain. 
+
+Compared with $^{238}U$, $^{232}Th$ and $^{40}K$, 
+the life time of $^{137}Cs$ ${60}Co$ is pretty short with only several or several tens of years. 
+For most material, the rate of them is too low to test, but they also should be considered if the rate is very high.
+
+
+The emission particles from decay include gamma, beta and alpha, which is isotopes dependent.
+
 \noindent
 1. isotopes: U,Th,K,Cs,Co, Radon, Kr. \\
 2. decay: gamma, beta, alpha,\\
-3. bulk, surface, emanation\\
+3. bulk: surface, emanation\\
 
 \subsection{Requirements and budget}
 
@@ -261,7 +285,7 @@ Analysis the results for each sub-systems ....
 \section{Radioactivity measurement}
 To control the background from JUNO calibration system, first we need to select pure material with low radioactivity. 
 We used the high pure germanium detector located in Jinpin underground experiment to test the radioactivity of the material as shown in Fig 1.
-The table 1 shows the testing result, which is best material we obtain so far. The Th232 and U238 radioactivity is measured from two daughter nuclear, to be conservative, we use the maximum of the two value as the final material radioactivity. The result seems good with low radioactivity. But to preciously calculate the background contribution, we need MC simulation to scale the value.
+The table 1 shows the testing result, which is best material we obtain so far. The Th232 and U238 radioactivity is measured from two daughter isotope, to be conservative, we use the maximum of the two value as the final material radioactivity. The result seems good with low radioactivity. But to preciously calculate the background contribution, we need MC simulation to scale the value.
 
 \begin{figure}[h]
 	\centering
@@ -289,7 +313,7 @@ The contribution background of CLS is shown in Table ?.
 The anchor is at the boundary of CD, contact with the acrylic inner surface, so with the fiducial volume cut, most of background event will be removed resulting low rate of contribution. 
 However, based on the CLS design, most of mechanical cable is in the fiducial volume, so even with fiducial volume cut, it is still difficult to significantly decrease the background rate.
 
-\begin{tabular*}{150mm}{@{\extracolsep{\fill}}ccccccc}
+\begin{tabular*}{100mm}{@{\extracolsep{\fill}}ccccccc}
 	\toprule  % ???
 	Isotope	& Rate (mHz)&	Err (mHz)\\
 	\midrule  % ???
@@ -301,7 +325,7 @@ However, based on the CLS design, most of mechanical cable is in the fiducial vo
 	\bottomrule  % ???
 \end{tabular*}
 
-\begin{tabular*}{150mm}{@{\extracolsep{\fill}}ccccccc}
+\begin{tabular*}{100mm}{@{\extracolsep{\fill}}ccccccc}
 	\toprule  % ???
 	Isotope	&	Rate (mHz)&	Err (mHz)\\
 	\midrule  % ???
@@ -313,6 +337,8 @@ However, based on the CLS design, most of mechanical cable is in the fiducial vo
 \end{tabular*}
 
 \subsubsection{GT}
+
+
 \begin{tabular*}{150mm}{@{\extracolsep{\fill}}ccccccc}
 	\toprule  % ???
 	Isotope	& Rate (mHz)&	Err (mHz)\\
@@ -361,11 +387,16 @@ However, based on the CLS design, most of mechanical cable is in the fiducial vo
 	\bottomrule  % ???
 \end{tabular*}
 
-
-
 \subsection{Influence to total JUNO background}
 
+The total rate of background from calibration system is about ?? mHz, which meet the required budget.
+
 \section{Conclusion}
+
+With HGe detector, we have tested the radioactivity all the material from calibration system.
+And with geant4-based detector simulation, we have calculated the rate of background with energy and fiducial volume cut.
+The total rate is less than ?? mHz, which meets the requirement.
+The degeneration of MH sensitivity due to calibration system background is about ??.
 
 \section{Acknowledgement}
 \section*{References}
