@@ -1,0 +1,19 @@
+# Fdb version 3
+["bibtex The_Background_of_JUNO_Calibration_System"] 1583899993 "The_Background_of_JUNO_Calibration_System.aux" "The_Background_of_JUNO_Calibration_System.bbl" "The_Background_of_JUNO_Calibration_System" 1583899993
+  "The_Background_of_JUNO_Calibration_System.aux" 1583897447 2364 d0e4fb509026bdfe35f4615c0591b54a ""
+  "The_Background_of_JUNO_Calibration_System.bcf" 0 -1 0 ""
+  "elsarticle-num.bst" 0 -1 0 ""
+  "mybibfile.bib" 0 -1 0 ""
+  (generated)
+  "The_Background_of_JUNO_Calibration_System.bbl"
+  "The_Background_of_JUNO_Calibration_System.blg"
+["pdflatex"] 1583899993 "The_Background_of_JUNO_Calibration_System.tex" "The_Background_of_JUNO_Calibration_System.pdf" "The_Background_of_JUNO_Calibration_System" 1583899993
+  "The_Background_of_JUNO_Calibration_System.aux" 1583897447 2364 d0e4fb509026bdfe35f4615c0591b54a ""
+  "The_Background_of_JUNO_Calibration_System.bbl" 0 -1 0 "bibtex The_Background_of_JUNO_Calibration_System"
+  "The_Background_of_JUNO_Calibration_System.spl" 1583897447 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "The_Background_of_JUNO_Calibration_System.tex" 1583899964 4837 bb937b7c48dc1fbbcc6516a5d14de74a ""
+  (generated)
+  "The_Background_of_JUNO_Calibration_System.aux"
+  "The_Background_of_JUNO_Calibration_System.log"
+  "The_Background_of_JUNO_Calibration_System.pdf"
+  "The_Background_of_JUNO_Calibration_System.spl"
