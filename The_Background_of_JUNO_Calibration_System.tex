@@ -23,6 +23,9 @@
 \usepackage{amsfonts}
 \usepackage{float}
 \usepackage{siunitx}
+\usepackage{amsmath, amssymb}
+\usepackage{makecell}
+\usepackage{multirow}
 %\usepackage{authblk}
 %\modulolinenumbers[5]
 %\setcitestyle{square}
@@ -125,7 +128,7 @@ The JUNO calibration system is designed
 to mainly correct the energy response of non-linearity 
 and detector non-uniformity, which requires the multiple 
 sources to reach multiple locations.
-To meet the calibration requirement, there is no choice to totally avoid contact with the central detector even some components permanently in it.
+To meet the calibration requirement, it is impossible to totally avoid contact with the central detector even some components permanently in it.
 The calibration systems includes 4 deployment sub-systems as shown in Fig.~\ref{calib:systems} and 2 positioning sub-systems. 
 
 \begin{figure}[h]
@@ -154,12 +157,11 @@ The core of the cable is stainless steel (SS), while the shell is PTFE.
 \subsection{Guide Tube Calibration System (GTCS)}
 The GTCS is a tube looped outside of the acrylic sphere along a
 latitude line, within which a radioactive source with cables attached
-to both ends gets driven around with good positioning precision.  The
-design of this system is discussed in details in
-Ref.~\cite{GTCS}. MeV-scale gammas can easily penetrate the 12~cm acrylic
-and deposit energy in the LS region, although the full absorption peak
-is mixed with a somewhat significant leakage tail.
+to both ends gets driven around with good positioning precision.  
+
 The PTFE tube, the cable and position sensor is close to the CD.
+Despite the GTCS is out of the CD, MeV-scale gammas can still easily penetrate 
+the water and acrylic and deposit energy in the LS target.
 The background of their contribution is a non-negligible value and 
 should be seriously studied.
 
@@ -171,9 +173,11 @@ is at one time per year level.
 And usually the device is in the calibration house, which is far away from the CD.
 So the background contribution of ROV can be negligible.
 
+\subsection{AURORA}
+
 \subsection{USS}
 
-USS is a significant component of JUNO calibration system. 
+USS is an important component of JUNO calibration system. 
 The system is permanently in JUNO central detector for calibration source position determination. 
 To avoid the problem of multiple paths that will worse the precision of position measurement, 
 the USS receiver will will be installed in the inner of CD, meaning that it will permanently contact with LS.
@@ -184,8 +188,11 @@ These particles will enter to the detector and be detected, resulting signal dis
 The USS includes cables, which is close the Acrylic inner sphere, with total length xx m, and 8 ultrasonic receivers, which is attached on acrylic shell. The USS cables consist of Teflon and stainless steel (SS), with diameter 1 mm. The line density is 0.01 kg/m. The ultrasonic receivers consist of two parts, NI and PCB with mass 0.106 kg. 
 
 \subsection{CCD}
-
-\subsection{AURORA}
+CCD is an alternative choice for positioning system to cross check USS.
+CCD use 8 cameras in water pool to take photons for calibration source with led at bottom weight,
+and then with machine learning, we can resolve the position of calibration source based on the pixel of photons.
+Since the cameras is outside of CD and the distance from cameras to LS region is about ?? m, 
+the corresponding contribution rate is only 0.04 mHz, which is a pretty small value.
 
 \section{Radioactive background}
 \subsection{Potential background}
@@ -313,83 +320,156 @@ The contribution background of CLS is shown in Table ?.
 The anchor is at the boundary of CD, contact with the acrylic inner surface, so with the fiducial volume cut, most of background event will be removed resulting low rate of contribution. 
 However, based on the CLS design, most of mechanical cable is in the fiducial volume, so even with fiducial volume cut, it is still difficult to significantly decrease the background rate.
 
-\begin{tabular*}{100mm}{@{\extracolsep{\fill}}ccccccc}
-	\toprule  % ???
-	Isotope	& Rate (mHz)&	Err (mHz)\\
-	\midrule  % ???
-	Co60	& 	0.056&	0.088	\\ 
-	K40	& 	0.309&	0.226	\\
-	Th232&	0.520&	0.214	\\
-	U238 &    0.419&	0.143	\\
-	Total (mHz)&	0.987&	0.574	\\
-	\bottomrule  % ???
-\end{tabular*}
+\begin{table}[h]
+	\centering
+	\caption{List of CLS}
+	\renewcommand\tabcolsep{2mm} 
+	\begin{tabular*}{110mm}{c|cc|cc}
+		\hline
+		Isotope	&\multicolumn{2}{c|}{Receiver}	&\multicolumn{2}{c}{CLS anchors}\\
+				& 	Rate (mHz)	&	Err (mHz)	& 	Rate (mHz)	&	Err (mHz)\\
+		\hline
+		U238 	&  	8.399 		&	6.064	 	&	0.059  		&	0.016	 \\
+		Th232	&	0.475		&	0.560	 	&	0.018		&	0.024	 \\
+		K40		& 	0.516		&	0.369	 	&	0.006 		&	0.004	 \\
+	Total (mHz)	&	9.390		&	6.101	 	&	0.083		&	0.029	 \\
+		\hline
+	\end{tabular*}
+\end{table}
 
-\begin{tabular*}{100mm}{@{\extracolsep{\fill}}ccccccc}
-	\toprule  % ???
-	Isotope	&	Rate (mHz)&	Err (mHz)\\
-	\midrule  % ???
-	U238	&	0.162	  &      0.327\\ 
-	Th232	&	2.470	  &      0.573\\
-	K40	&	0.712	  &      0.424\\
-	Total(mHz)&	3.344	  &      0.784\\
-	\bottomrule  % ???
-\end{tabular*}
+%\begin{tabular*}{100mm}{@{\extracolsep{\fill}}ccccccc}
+%	\toprule  % ???
+%	Isotope	& Rate (mHz)&	Err (mHz)\\
+%	\midrule  % ???
+%	Co60	& 	0.056&	0.088	\\ 
+%	K40	& 	0.309&	0.226	\\
+%	Th232&	0.520&	0.214	\\
+%	U238 &    0.419&	0.143	\\
+%	Total (mHz)&	0.987&	0.574	\\
+%	\bottomrule  % ???
+%\end{tabular*}
+%
+%\begin{tabular*}{100mm}{@{\extracolsep{\fill}}ccccccc}
+%	\toprule  % ???
+%	Isotope	&	Rate (mHz)&	Err (mHz)\\
+%	\midrule  % ???
+%	U238	&	0.162	  &      0.327\\ 
+%	Th232	&	2.470	  &      0.573\\
+%	K40		&	0.712	  &      0.424\\
+%	Total(mHz)&	3.344	  &      0.784\\
+%	\bottomrule  % ???
+%\end{tabular*}
 
-\subsubsection{GT}
+\subsubsection{GTCS}
 
-
-\begin{tabular*}{150mm}{@{\extracolsep{\fill}}ccccccc}
-	\toprule  % ???
-	Isotope	& Rate (mHz)&	Err (mHz)\\
-	\midrule  % ???
-	Co60	& 	0.056&	0.088	\\ 
-	K40	& 	0.309&	0.226	\\
-	Th232&	0.520&	0.214	\\
-	U238 &    0.419&	0.143	\\
-	Total (mHz)&	0.987&	0.574	\\
-	\bottomrule  % ???
-\end{tabular*}
-
-\begin{tabular*}{150mm}{@{\extracolsep{\fill}}ccccccc}
-	\toprule  % ???
-	Isotope	&	Rate (mHz)&	Err (mHz)\\
-	\midrule  % ???
-	U238	&	0.162	  &      0.327\\ 
-	Th232	&	2.470	  &      0.573\\
-	K40	&	0.712	  &      0.424\\
-	Total(mHz)&	3.344	  &      0.784\\
-	\bottomrule  % ???
-\end{tabular*}
+\begin{table}[h]
+	\centering
+	\caption{List of PTFE tube radioactivity}
+	%\footnotesize
+	\small
+	\renewcommand\tabcolsep{1mm} 
+	%\begin{tabular*}{120mm}{@{\extracolsep{\fill}}c|cc|cc|cc}
+	\begin{tabular*}{125mm}{c|cc|cc|cc}
+		\hline
+		Isotope	&\multicolumn{2}{c|}{PTFE tube}	&\multicolumn{2}{c|}{Cable}	 &\multicolumn{2}{c}{Sensor} \\
+				& 	Rate (mHz)	&	Err (mHz)	& 	Rate (mHz)	&	Err (mHz)& 	Rate (mHz)	&	Err (mHz)\\
+		\hline
+		Co60	& 	0.130	&		 	& 	1.146	&		 &	0.156		&		 \\ 
+		U238 	&   0.003	&		 	&   0.078	&		 &  17.21		&		 \\
+		Th232	&	0.004	&		 	&	0.095	&		 &	42.44		&		 \\
+		K40		& 	2.456	&		 	& 	0.012	&		 & 	3.560		&		 \\
+	Total (mHz)	&	2.593	&		 	&	1.331	&		 &	63.38		&		 \\
+		\hline
+	\end{tabular*}
+\end{table}
 
 \subsubsection{USS}
-\begin{tabular*}{150mm}{@{\extracolsep{\fill}}ccccccc}
-	Isotope	& Rate (mHz)&	Err (mHz)\\
-	\toprule  % ???
-			&   Rate(mHz)&	Err(mHz)&Err(mHz)\\
-	\midrule  % ???                             
-	Co60		& 	0.056&	0.088	&0.088	\\ 
-	K40		& 	0.309&	0.226	&0.226	\\
-	Th232		&	0.520&	0.214	&0.214	\\
-	U238 		&    	0.419&	0.143	&0.143	\\
-	Total (mHz)	&	0.987&	0.574	&0.574	\\
-	\bottomrule  % ???
-\end{tabular*}
 
-\begin{tabular*}{150mm}{@{\extracolsep{\fill}}ccccccc}
-	\toprule  % ???
-	Isotope	&	Rate (mHz)&	Err (mHz)\\
-	\midrule  % ???
-	U238	&	0.162	  &      0.327\\ 
-	Th232	&	2.470	  &      0.573\\
-	K40	&	0.712	  &      0.424\\
-	Total(mHz)&	3.344	  &      0.784\\
-	\bottomrule  % ???
-\end{tabular*}
+\begin{table}[h]
+	\centering
+	\caption{List of USS}
+	\renewcommand\tabcolsep{2mm} 
+	\begin{tabular*}{110mm}{c|cc|cc}
+		\hline
+		Isotope	&\multicolumn{2}{c|}{Receiver}	&\multicolumn{2}{c}{USS Cable} \\
+				& 	Rate (mHz)	&	Err (mHz)	& 	Rate (mHz)	&	Err (mHz)\\
+		\hline
+		Co60	& 	0.056		&	0.088	 	& 			&		 \\ 
+		U238 	&   0.419		&	0.143	 	&	0.712	  &      0.424 \\
+		Th232	&	0.520		&	0.214	 	&	2.470	  &      0.573 \\
+		K40		& 	0.309		&	0.226	 	&	0.162	  &      0.327 \\
+	Total (mHz)	&	0.987		&	0.574	 	&	3.344	  &      0.784 \\
+		\hline
+	\end{tabular*}
+\end{table}
+
+
+\subsubsection{AURARO}
+
+\begin{table}[h]
+	\centering
+	\caption{List of AURARO}
+	\renewcommand\tabcolsep{2mm} 
+	\begin{tabular*}{120mm}{c|cc|c|c}
+		\hline
+		Isotope	&\multicolumn{2}{c|}{Receiver}	& Electrical cable & Optical fiber\\
+				& 	Rate (mHz)	&	Err (mHz)	& Rate (mHz)&	Rate (mHz)\\
+		\hline
+		U238 	&   $7.28\times10^{-5}$		&$10^{-5}$		 	&	  		&   	\\
+		Th232	&	$1.93\times10^{-3}$	&	$1.2\times10^{-4}$	 	&	  		&   	\\
+		K40		& 	$2.88\times10^{-5}$		&	$2\times10^{-5}$	 	&	  		&   	\\
+	Total (mHz)	&	0.002		&	0.0001	 	&	0.04  	& 0.001 \\
+		\hline
+	\end{tabular*}
+\end{table}
 
 \subsection{Influence to total JUNO background}
 
 The total rate of background from calibration system is about ?? mHz, which meet the required budget.
+
+%\begin{table}[h]
+%	\centering
+%	\caption{List of USS}
+%	\renewcommand\tabcolsep{2mm} 
+%	\begin{tabular*}{120mm}{ccc}
+%		\hline
+%		System	& Item		& Rate (mHz)	\\
+%		\hline    		 
+%		\multirow{2}*{CLS} 	& cable		&  0	\\
+%		\cline{2-3}
+%		& cable		&  0	\\
+%		\hline
+%	\end{tabular*}
+%\end{table}
+
+\begin{table}[h]
+	\centering
+	\caption{List of summary}
+	\begin{tabular}{c|c|c}
+	    \hline
+		System & Item & Rate (mHz)\\
+	    \hline
+	    \multirow{2}*{CLS} 
+		&	cable & 9.390\\
+	    &	anchor& 0.083\\ \hline
+		\multirow{2}*{USS}
+	    & cable 	& 3.344 \\ 
+	    & receiver 	& 0.987 \\ \hline
+		\multirow{3}*{GTCS}	
+	    & tube		& 2.593 \\ 
+	    & cable 	& 1.331 \\ 
+	    & sensor 	& 63.38 \\ \hline
+		CCD & camera & 0.04 \\
+        \multirow{3}*{AURARO}
+        & termination      	& 0.002 \\
+        & cable    			& 0.040 \\
+        & fiber    			& 0.001 \\ \hline
+		Total & & 81.2\\ 
+		\hline
+
+	\end{tabular}
+\end{table}
+
 
 \section{Conclusion}
 
