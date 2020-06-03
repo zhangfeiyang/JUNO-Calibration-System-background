@@ -62,7 +62,7 @@
 %\usepackage{numcompress}\bibliographystyle{model6-num-names}
 
 %% `Elsevier LaTeX' style
-%\bibliographystyle{elsarticle-num}
+\bibliographystyle{elsarticle-num}
 %%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
@@ -87,7 +87,7 @@ JUNO, Calibration, background, radioactivity.
 \end{keyword}
 \end{frontmatter}
 \linenumbers
-\section{Introduction}
+\section{The JUNO Introduction}
 Jiangmen Underground Neutrino Observatory (JUNO) is a multi-purpose neutrino experiment. 
 The main goal of JUNO is to determine the neutrino mass hierarchy (MH) via precisely measuring reactor anti-neutrino oscillation spectrum. 
 %The experiment is located 700 m underground in Guangdong, China, with distance of 53 km from Yangjiang and Taishan nuclear power plant (NPP).
@@ -97,18 +97,12 @@ The main goal of JUNO is to determine the neutrino mass hierarchy (MH) via preci
 The JUNO experiment is in Jiangmen city, Guangdong province, China, 53 km from Yangjiang and Taishan nuclear power plants (NPP).
 The target of JUNO is 20 kton liquid scintillator with 12 cm thickness spherical acrylic shell as container.
 The central detector is a 35.4 m diameter ball within a water pool.
-The water pool a 40 m hight and 40 m diameter cylinder filled with ultra-pure water as a buffer to stop the external radioactivity and veto cosmogenic ray. 
-There are about 18000 20-inch and 25000 3-inch photomultipliers (PMTs) in the water pool
-close to the central detector with about 75\% coverage.
+The water pool a 40 m hight and 40 m diameter cylinder filled with ultra-pure water as a buffer to stop the external radioactivity. 
+There are about 18000 20-inch and 25000 3-inch photomultipliers (PMTs) closed the central detector with about 75\% coverage.
 
-The reactor anti-neutrino could be detected and identified via so-called inverse beta decay (IBD) reaction, 
-$\bar{\nu}_{e}+p \rightarrow e^{+}+n $.
-The positron will deposit energy first as a prompt signal, 
-while the neutron will be captured by the nuclear (proton or carbon) within about 200 us as a delay signal. 
-With the pair of prompt signal positron and delay signal neutron, 
-the efficiency of IBD events selection could be significantly improved. 
-However, the background of physics-like events will smear the prompt and delay signal, 
-which will reduce the selection efficiency and data quality.
+The reactor anti-neutrino could be detected via so-called inverse beta decay (IBD) reaction, $\bar{\nu}_{e}+p \rightarrow e^{+}+n $.The positron will deposit energy first as a prompt signal, while the neutron will be captured by the nuclear (proton or carbon) within about 200 us as a delay signal. 
+With the pair of prompt signal positron and delay signal neutron, the efficiency of IBD events selection could be significantly improved. 
+However, the background of physics-like events will smear the prompt and delay signal, which will reduce the efficiency and quality.
 Two physics-like events from background with interval time of about 200 us will be falsely identified as IBD events.
 And the extra introduced background events will distort the reactor neutrino spectrum, and thereby worse the neutrino MH sensitivity. 
 
@@ -122,32 +116,27 @@ The radioactive material includes LS, acrylic, stainless steel, PMT and material
 In principle, the closer to detector, the more significant of background contribution to experiment.
 Since the part of calibration device is close and even in the central detector, so the background of calibration system contribution should be significantly treated. 
 
+
 Different from background of other system like LS, acrylic and PMT, 
 the background from calibration system is position dependent.
-Since the location of background from calibration system is well known,
-a special volume cut is possible for data analysis.
-Besides, it can give a better background estimation with position dependent.
-In this paper, we will study the influence of calibration system on the JUNO experiment background, 
-which consists of the following ingredients: 
-
+So well known background from calibration system 
+can help us do special cut or more precise likelihood function at give position during data analysis.
+In this paper, we will study the influence of calibration system on the JUNO experiment background, which consists of the following ingredients: 
 \noindent
-1. Introduction of JUNO calibration system.\\
-2. Potential background and budget. \\
-3. Measurement of radioactive material of calibration system.\\
-4. Background contribution via MC simulation.\\
-5. The influence on MH sensitivity.\\
+Measurement of radioactive material of calibration system.
+\noindent
+Background contribution via MC simulation.
+\noindent
+The influence on MH sensitivity.
 
-\section{JUNO calibration system}
+\section{The JUNO calibration system}
 
 The JUNO calibration system is designed 
-to mainly correct energy non-linearity and detector non-uniformity
-,which requires the multiple 
-sources and many locations to do calibration.
-To meet the requirement, 
-the source should be deployed to certain position with cm level precision, which is big a challenge. 
-So it's difficult to avoid contact with the LS region and even some components should be permanently in it.
-The calibration systems includes 4 deployment sub-systems as shown in Fig.~\ref{calib:systems} 
-and 2 positioning sub-systems. 
+to mainly correct the energy response of non-linearity 
+and detector non-uniformity, which requires the multiple 
+sources to reach multiple locations.
+To meet the calibration requirement, it is impossible to totally avoid contact with the central detector even some components permanently in it.
+The calibration systems includes 4 deployment sub-systems as shown in Fig.~\ref{calib:systems} and 2 positioning sub-systems. 
 
 \begin{figure}[h]
 	\centering
@@ -159,31 +148,24 @@ and 2 positioning sub-systems.
 \subsection{Automatic Calibration Unit (ACU)}
 
 The ACU is located at the top of the calibration house, which keep away from the central detector (CD).
-The touch with LS region only occur during the routine calibration. 
-The routine calibration sources include laser source and radioactive source. 
-The rate of laser source and radioactive source are respectively 50 Hz and 100 Hz. 
-The only fact we should concern is whether the background rate of cable is enough high to affect the calibration data.
-Compared with the rate of source, the background rate is a small value which can be ignored.
+So normally, the contribution of ACU can be ignored.
+Only in the calibration turn, the calibration source of ACU attached on cable will enter the CD.
+The routine calibration sources include laser source and radioactive source. The rate of laser source and radioactive source are respectively 50 Hz and 100 Hz. The only fact we should concern is whether the background rate of cable is enough high to affect the calibration data.
 
 
 \subsection{Cable Loop System (CLS)}
-The strategy of CLS is to deploy the calibration sources offaxis position in vertical half-plane.
-There are two asymmetric CLSs designed as illustrated in Fig.~\ref{calib:systems}.
-The calibration source is attached on central cable and side cable.
-A piece of 2.4 kg PTFE is permanently fixed on inner surface of acrylic shell to hold the side cable.
-During the calibration, both central cable and side cable is in LS region to deliver the source.
-And after the calibration, the central cable will be retracted while the side cable will stay in the CD.
-The length of cable in the CD is about 71 m, and the total mass is 0.269 kg.
+The strategy of CLS is to deploy the calibration sources offaxis position in half-plane.
+There are two asymmetric CLSs designed as illustrated in Fig?.
+For each CLS, central cable and side cable ware attached to the source formaing a loop to deliver and retract the source.
+And the side cable will go through a anchor, a piece of 3.2 kg PTFE attached on inner surface of acrylic shell.
+Based on the design of CLS, part of side cables will be permanently in the central detector (CD) during the physics data taking. The length of cable in the CD is ?? m, and the total mass is ?? kg.
 The core of the cable is stainless steel (SS), while the shell is PTFE.
-The CLS cable is stainless steel (SS) core and PTFE shell, and 
-the diameter of cable is 1 mm, while the average density is 4.8 $g/cm^{3}$.
-
 
 \subsection{Guide Tube Calibration System (GTCS)}
 The GTCS is a tube looped outside of the acrylic sphere along a
 latitude line, within which a radioactive source with cables attached
 to both ends gets driven around with good positioning precision.  
-Ten sensors are used to determine the position of source.
+
 The PTFE tube, the cable and position sensor is close to the CD.
 Despite the GTCS is out of the CD, MeV-scale gammas can still easily penetrate 
 the water and acrylic and deposit energy in the LS target.
@@ -240,7 +222,7 @@ $^{40}K$ is one of potassium isotopes with life time 1.25 $\times10^{9}$ years, 
 Different from $^{238}U$ and $^{232}Th$, $^{40}K$ doesn't have decay chain. 
 
 Compared with $^{238}U$, $^{232}Th$ and $^{40}K$, 
-the life time of $^{137}Cs$ $^{60}Co$ is pretty short with only several or several tens of years. 
+the life time of $^{137}Cs$ ${60}Co$ is pretty short with only several or several tens of years. 
 For most material, the rate of them is too low to test, but they also should be considered if the rate is very high.
 
 
@@ -283,17 +265,17 @@ The overall budget should be kept less than 0.2 Hz.
 SNIPER is an official tool to simulate JUNO experiment\cite{SNIPER}. 
 The basic geometry of detector is developed by JUNO software members, 
 but not including all calibration related geometry. 
-So first of all, the corresponding geometry should be constructed 
+So first of alli, the corresponding geometry should be constructed 
 and written into the detector in correct position. 
-And then assume the radioactive sources ($^{238}U$, $^{232}Th$, $^{40}K$) are uniformly distributed in the material. 
+And then assume the radioactive sources (U238, Th232, K40) are uniformly distributed in the material. 
 The simulation will run for every component independently. 
-The spectrum of deposit energy in LS region is shown in Fig.~\ref{USS:Rece:$^{238}U$}.
+The spectrum of deposit energy in LS region is shown in Fig.~\ref{USS:Rece:U238}.
 
 \begin{figure}
 	\centering
 	\includegraphics[width=3in]{U238_USS_receiver.png}
-	\caption{Simulation for $^{238}U$ in USS receiver}
-	\label{USS:Rece:$^{238}U$}
+	\caption{Simulation for U238 in USS receiver}
+	\label{USS:Rece:U238}
 \end{figure}
 
 \subsection{Energy and Fiducial volume cut}
@@ -325,86 +307,46 @@ Table? shows the summary of survival probability of calibration system survival 
 
 Analysis the results for each sub-systems ....
 
-%\begin{table}{n}
-%	\centering
-%	%\small
-%	%\footnotesize
-%	\scriptsize
-%	\caption{List of survival probability}
-%	\renewcommand\tabcolsep{0.5mm} 
-%	\begin{tabular*}{125mm}{c|c|cc|cc|cc|cc}
-%	\hline
-%	& &\multicolumn{2}{c|}{$^{60}Co$} & \multicolumn{2}{c|}{$^{238}U$} &\multicolumn{2}{c|}{$^{232}Th$} &\multicolumn{2}{c}{$^{40}K$} \\
-%	System & Item & Prob & Error & Prob & Error & Prob & Error & Prob & Error   \\
-%	\hline
-%	\multirow{2}*{CLS}
-%	& Cables 	& -		& - 	& 1.12	& 0.01 	& 1.49 	& 0.01 	& 0.121 & 0.001 \\
-%	& Anchors 	& - 	& - 	& 0.024	& 0.001	& 0.037 & 0.001 & 0.0031& 0.0001\\
-%	\hline
-%	\multirow{3}*{GTCS}
-%	& Tube 		& 0.0123&0.0003	& 0.0071& 0.0007&0.014 	&0.001	& 0.0010 & 0.0001\\
-%	& Cables 	& 0.0117&0.0002	& 0.0076& 0.0007&0.013 	&0.001	& 0.0012 & 0.0001\\
-%	& Sensors 	& 0.0107&0.0001	& 0.0082& 0.0004&0.0111	&0.0004	& 0.00072& 0.00003\\
-%	\hline
-%	\multirow{2}*{USS}
-%	& Cables 	& - 	& - 	& 0.083		&0.005	& 0.141	& 0.006	&0.0132	& 0.0006 \\
-%	& Receivers & -		& - 	& 0.024 	&0.002	& 0.038	& 0.003 &0.0044	& 0.0002 \\
-%	\hline
-%	AURARO & Termination& - 	& -			& $2.8\times10^{-6}$ & $1.4\times10^{-6}$ &$1.11\times10^{-5}$ & $2.4\times10^{-6}$ &	$1\times10^{-7}$ & $7\times10^{-8}$ \\
-%	\hline
-%	\end{tabular*}
-%\end{table}
-
-\begin{table}
+\begin{table}{n}
 	\centering
 	%\small
 	%\footnotesize
-	%\scriptsize
+	\scriptsize
 	\caption{List of survival probability}
-	%\renewcommand\tabcolsep{0.5mm} 
-	\begin{tabular*}{125mm}{cccccc}
+	\renewcommand\tabcolsep{0.5mm} 
+	\begin{tabular*}{120mm}{c|c|cc|cc|cc|cc}
 	\hline
-	System & Item & $^{60}Co$ & $^{238}U$ &$^{232}Th$ &$^{40}K$ \\
+	& &\multicolumn{2}{c|}{Co60} & \multicolumn{2}{c|}{U238} &\multicolumn{2}{c|}{Th232} &\multicolumn{2}{c}{K40} \\
+	System & Item & Prob & Error & Prob & Error & Prob & Error & Prob & Error  \\
 	\hline
 	\multirow{2}*{CLS}
-	& Cables 	& -		& 1.28	& 1.61 	 & 0.143 \\
-	& Anchors 	& - 	& 0.024	& 0.037  & 0.0031\\
+	& Cables 	& -		& - 	& 1.116	& 0.003 & 1.487 & 0.004 & 0.121 & 0.001 	\\
+	& Anchors 	& - 	& - 	& 0.0236& 0.0004&0.0369 &0.0004 & 0.0031& 0.0001 	\\
 	\hline
 	\multirow{3}*{GTCS}
-	& Tube 		& 0.0123& 0.0071&0.014 	 & 0.00104 \\
-	& Cables 	& 0.0117& 0.0076&0.013 	 & 0.0012 \\
-	& Sensors 	& 0.0107& 0.0082&0.0111	 & 0.00072\\
+	& Tube 		& 		&  		& 0.4  		&  		& 0.3 	&  		& 2370 	& 50 		\\
+	& Cables 	& 		&  		& 10  		&  		& 8  	&  		& 12 	&  			\\
+	& Sensors 	& 		& 	 	& 3420 		& 370 	& 3830 	& 64 	& 4946 	& 385 		\\
 	\hline
 	\multirow{2}*{USS}
-	& Cables 	& - 	& 0.083	& 0.141	 &0.0132 \\
-	& Receivers & -		& 0.024	& 0.038	 &0.0044 \\
+	& Cables 	& - 	& - 	& 0.083		&0.001	& 0.141	& 0.002	&0.0132	& 0.0006 \\
+	& Receivers & -		& - 	& 0.0235 	&0.0005	& 0.038	& 0.001 &0.0044	& 0.0002 \\
 	\hline
-	AURARO & Termination& -	& $2.8\times10^{-6}$ &$1.11\times10^{-5}$ &	$1\times10^{-7}$ \\
+	AURARO & Termination& 		&  		& $2.8\times10^{-6}$ & $4\times10^{-7}$ &$1.11\times10^{-5}$ & $7\times10^{-7}$ &	$1\times10^{-7}$ & $7\times10^{-8}$ \\
 	\hline
 	\end{tabular*}
 \end{table}
 
 \section{Radioactivity measurement}
+To control the background from JUNO calibration system, first we need to select pure material with low radioactivity. 
+We used the high pure germanium detector located in Jinpin underground experiment to test the radioactivity of the material as shown in Fig 1.
+The table 1 shows the testing result, which is best material we obtain so far. The Th232 and U238 radioactivity is measured from two daughter isotope, to be conservative, we use the maximum of the two value as the final material radioactivity. The result seems good with low radioactivity. But to preciously calculate the background contribution, we need MC simulation to scale the value.
 
-To control the background from JUNO calibration system, 
-we need to select pure material with low radioactivity to set up the calibration system. 
-A high pure germanium (HPGe) detector located in Jinpin underground experiment is used to
-measure the radioactivity of the material as shown in Fig.\ref{USS_Cable_PCB}.
-The material of calibration system that has potential background should be measured with HPGe detector.
-Actually, most of material is selected with the lowest radioactivity in several candidates.
-Table~\ref{Radio_measure} is list of the radioactivity of materials that have potential background contribution.
-Since the $^{232}Th$ and $^{238}U$ radioactivity can measured from two daughter isotope, 
-so to be conservative, the maximum of the two value is used for calculation. 
 
-%The result seems good with low radioactivity. 
-%But to preciously calculate the background contribution, we need MC simulation to scale the value.
-The measurement only shows radioactivity of material, but not for background rate.
-So we should use detector simulation to calculate the efficiency of background constribution, and thereby obtain the background rate. 
 
-\begin{figure}
+\begin{figure}[h]
 	\centering
-	%\includegraphics[width=3in]{USS_Cable_PCB_Ni.png}
-	\includegraphics[width=2in]{USS_Cable_PCB_Ni.png}
+	\includegraphics[width=3in]{USS_Cable_PCB_Ni.png}
 	\caption{JUNO USS cables and receivers. They are in high pure germanium detector for radioactivity testing}
 	\label{USS_Cable_PCB}
 \end{figure}
@@ -419,37 +361,35 @@ So we should use detector simulation to calculate the efficiency of background c
 %		\hline
 %		Isotope	&CLS cable&CLS anchors&	Tube  &GT Cable&GT sensor&	USS cable	&	USS receiver\\
 %		\hline                                                                                                               
-%		$^{60}Co$ 	&0.6(0.7)&	-	 		&10.5 		&97		&	15(5)	 &		 	&	2.4(3.8)	 \\
-%		$^{238}U$ 	&24(17)&	0.4(0.1)	&0.4 		&10		&	3420(370)&	8.8	 	&	17.3(5.9)	 \\
-%		$^{232}Th$	&1(1)  &	0.1(0.1)	&0.3		&8		&	3830(64) &	110	 	&	14.1(5.8)	 \\
-%		$^{40}K$		&12(9) &	0.3(0.2)	&2370(50)	&12		&	4946(385)&	342	 	&	69.8(50.9)	 \\
+%		Co60 	&0.6(0.7)&	-	 		&10.5 		&97		&	15(5)	 &		 	&	2.4(3.8)	 \\
+%		U238 	&24(17)&	0.4(0.1)	&0.4 		&10		&	3420(370)&	8.8	 	&	17.3(5.9)	 \\
+%		Th232	&1(1)  &	0.1(0.1)	&0.3		&8		&	3830(64) &	110	 	&	14.1(5.8)	 \\
+%		K40		&12(9) &	0.3(0.2)	&2370(50)	&12		&	4946(385)&	342	 	&	69.8(50.9)	 \\
 %		\hline
 %	\end{tabular*}
 %\end{table}
 
-\begin{table}
+\begin{table}{n}
 	\centering
-	\small
-	\caption{List of material raioactivity.}
-	\label{Radio_measure}
+	\caption{List of material test}
 	\renewcommand\tabcolsep{1.2mm} 
-	\begin{tabular*}{115mm}{c|c|cc|cc|cc|cc}
+	\begin{tabular*}{110mm}{c|c|cc|cc|cc|cc}
 	\hline
-	& &\multicolumn{2}{c|}{$^{60}Co$} & \multicolumn{2}{c|}{$^{238}U$} &\multicolumn{2}{c|}{$^{232}Th$} &\multicolumn{2}{c}{$^{40}K$} \\
+	& &\multicolumn{2}{c|}{Co60} & \multicolumn{2}{c|}{U238} &\multicolumn{2}{c|}{Th232} &\multicolumn{2}{c}{K40} \\
 	System & Item & mBq & Error & mBq & Error & mBq & Error & mBq & Error  \\
 	\hline
 	\multirow{2}*{CLS}
-	& Cables 	& - 	& - & 6.3 & 4.6 & 0.3 & 0.3 & 3.3 & 2.3 \\
-	& Anchors 	& - 	& - & 0.07 & - & 0.20 & 0.04&1.91 & 0.08 \\
+	& Cables & 0.6 & 0.7 & 24 & 17 & 1 & 1 & 12 & 9 \\
+	& Anchors & - & - & 0.4 & 0.1 & 0.1 & 0.1 & 0.3 & 0.2 \\
 	\hline
 	\multirow{3}*{GTCS}
-	& Tube 		& 10.5 	& -	& 0.4  	&  -	& 0.3 	& -		& 2370 	& 50 \\
-	& Cables 	& 97	& 4 & 10  	& 28 	& 8  	& 6		& 12 	& 24 \\
+	& Tube 		& 10.5 	&  	& 0.4  	&  		& 0.3 	&  		& 2370 	& 50 \\
+	& Cables 	& 97	&  	& 10  	&  		& 8  	&  		& 12 	&  \\
 	& Sensors 	& 15	& 5 & 3420 	& 370 	& 3830 	& 64 	& 4946 	& 385 \\
 	\hline
 	\multirow{2}*{USS}
-	& Cables 	& - 	& - 	& 8.8 &17.8& 110.3 &25.6 	& 342.4 &204.2  \\
-	& Receivers & -		& - 	& 17.3& 5.9& 14.1  & 5.8 & 69.8 	& 50.9 \\
+	& Cables 	& - 	& - 	& 8.8 & 	& 110 & 	& 342 	&  \\
+	& Receivers & 2.4	& 3.8 	& 17.3& 5.9& 14.1& 5.8 & 69.8 	& 50.9 \\
 	\hline
 	AURARO & Termination& -     & -   &26 & - & 174 & - & 288 & -\\
 	\hline
@@ -480,13 +420,13 @@ However, based on the CLS design, most of mechanical cable is in the fiducial vo
 	\renewcommand\tabcolsep{2mm} 
 	\begin{tabular*}{110mm}{c|cc|cc}
 		\hline
-		Isotope	&\multicolumn{2}{c|}{CLS cables}	&\multicolumn{2}{c}{CLS anchors}\\
+		Isotope	&\multicolumn{2}{c|}{Receiver}	&\multicolumn{2}{c}{CLS anchors}\\
 				& 	Rate (mHz)	&	Err (mHz)	& 	Rate (mHz)	&	Err (mHz)\\
 		\hline
-		$^{238}U$ 	&  	8.06	&	5.89 	&	0.0017  	&	-		 \\
-		$^{232}Th$	&	0.48	&	0.48 	&	0.0074		&	0.0015	 \\
-		$^{40}K$		& 	0.47	&	0.33 	&	0.0059 		&	0.0002	 \\
-	Total (mHz)	&	9.01	&	5.92 	&	0.0150		&	0.0015	 \\
+		U238 	&  	8.399 		&	6.064	 	&	0.059  		&	0.016	 \\
+		Th232	&	0.475		&	0.560	 	&	0.018		&	0.024	 \\
+		K40		& 	0.516		&	0.369	 	&	0.006 		&	0.004	 \\
+	Total (mHz)	&	9.390		&	6.101	 	&	0.083		&	0.029	 \\
 		\hline
 	\end{tabular*}
 \end{table}
@@ -495,10 +435,10 @@ However, based on the CLS design, most of mechanical cable is in the fiducial vo
 %	\toprule  % ???
 %	Isotope	& Rate (mHz)&	Err (mHz)\\
 %	\midrule  % ???
-%	$^{60}Co$	& 	0.056&	0.088	\\ 
-%	$^{40}K$	& 	0.309&	0.226	\\
-%	$^{232}Th$&	0.520&	0.214	\\
-%	$^{238}U$ &    0.419&	0.143	\\
+%	Co60	& 	0.056&	0.088	\\ 
+%	K40	& 	0.309&	0.226	\\
+%	Th232&	0.520&	0.214	\\
+%	U238 &    0.419&	0.143	\\
 %	Total (mHz)&	0.987&	0.574	\\
 %	\bottomrule  % ???
 %\end{tabular*}
@@ -507,9 +447,9 @@ However, based on the CLS design, most of mechanical cable is in the fiducial vo
 %	\toprule  % ???
 %	Isotope	&	Rate (mHz)&	Err (mHz)\\
 %	\midrule  % ???
-%	$^{238}U$	&	0.162	  &      0.327\\ 
-%	$^{232}Th$	&	2.470	  &      0.573\\
-%	$^{40}K$		&	0.712	  &      0.424\\
+%	U238	&	0.162	  &      0.327\\ 
+%	Th232	&	2.470	  &      0.573\\
+%	K40		&	0.712	  &      0.424\\
 %	Total(mHz)&	3.344	  &      0.784\\
 %	\bottomrule  % ???
 %\end{tabular*}
@@ -518,20 +458,21 @@ However, based on the CLS design, most of mechanical cable is in the fiducial vo
 
 \begin{table}[h]
 	\centering
-	\caption{List of GTCS radioactivity}
+	\caption{List of PTFE tube radioactivity}
 	%\footnotesize
 	\small
 	\renewcommand\tabcolsep{1mm} 
+	%\begin{tabular*}{120mm}{@{\extracolsep{\fill}}c|cc|cc|cc}
 	\begin{tabular*}{125mm}{c|cc|cc|cc}
 		\hline
 		Isotope	&\multicolumn{2}{c|}{PTFE tube}	&\multicolumn{2}{c|}{Cable}	 &\multicolumn{2}{c}{Sensor} \\
 				& 	Rate (mHz)	&	Err (mHz)	& 	Rate (mHz)	&	Err (mHz)& 	Rate (mHz)	&	Err (mHz)\\
 		\hline
-		$^{60}Co$	& 	0.130	&	-	 	& 	1.135	& 0.047	 &0.161	& 0.054	 \\ 
-		$^{238}U$ 	&   0.003	&	-	 	&   0.076	& 0.021	 &28.044& 3.034	 \\
-		$^{232}Th$	&	0.004	&	-	 	&	0.104	& 0.078	 &42.513& 0.710	 \\
-		$^{40}K$		& 	2.465	&	0.052 	& 	0.014	& 0.029	 &3.576	& 0.277	 \\
-	Total (mHz)	&	2.602	&	0.052 	&	1.329	& 0.098	 &74.294& 9.789	 \\
+		Co60	& 	0.130	&		 	& 	1.146	&		 &	0.156		&		 \\ 
+		U238 	&   0.003	&		 	&   0.078	&		 &  17.21		&		 \\
+		Th232	&	0.004	&		 	&	0.095	&		 &	42.44		&		 \\
+		K40		& 	2.456	&		 	& 	0.012	&		 & 	3.560		&		 \\
+	Total (mHz)	&	2.593	&		 	&	1.331	&		 &	63.38		&		 \\
 		\hline
 	\end{tabular*}
 \end{table}
@@ -547,11 +488,11 @@ However, based on the CLS design, most of mechanical cable is in the fiducial vo
 		Isotope	&\multicolumn{2}{c|}{Receiver}	&\multicolumn{2}{c}{USS Cable} \\
 				& 	Rate (mHz)	&	Err (mHz)	& 	Rate (mHz)	&	Err (mHz)\\
 		\hline
-		%$^{60}Co$	& 			&		 	& 	-		  &		 -	   \\ 
-		$^{238}U$ 	&   0.415	&	0.142 	&	0.734	  &      1.477 \\
-		$^{232}Th$	&	0.536	&	0.220 	&	15.552	  &      3.610 \\
-		$^{40}K$		& 	0.307	&	0.224 	&	4.520	  &      2.695 \\
-	Total (mHz)	&	1.258	&	0.345 	&	20.806	  &      22.477\\
+		Co60	& 	0.056		&	0.088	 	& 			&		 \\ 
+		U238 	&   0.419		&	0.143	 	&	0.712	  &      0.424 \\
+		Th232	&	0.520		&	0.214	 	&	2.470	  &      0.573 \\
+		K40		& 	0.309		&	0.226	 	&	0.162	  &      0.327 \\
+	Total (mHz)	&	0.987		&	0.574	 	&	3.344	  &      0.784 \\
 		\hline
 	\end{tabular*}
 \end{table}
@@ -568,9 +509,9 @@ However, based on the CLS design, most of mechanical cable is in the fiducial vo
 		Isotope	&\multicolumn{2}{c|}{Receiver}	& Electrical cable & Optical fiber\\
 				& 	Rate (mHz)	&	Err (mHz)	& Rate (mHz)&	Rate (mHz)\\
 		\hline
-		$^{238}U$ 	&   $7.28\times10^{-5}$		&$10^{-5}$		 			&	 - 		&  	- 	 \\
-		$^{232}Th$	&	$1.93\times10^{-3}$	&	$1.2\times10^{-4}$	 		&	 0.04	&   0.001\\
-		$^{40}K$		& 	$2.88\times10^{-5}$		&	$2\times10^{-5}$	 	&	 -		& 	-  	 \\
+		U238 	&   $7.28\times10^{-5}$		&$10^{-5}$		 	&	  		&   	\\
+		Th232	&	$1.93\times10^{-3}$	&	$1.2\times10^{-4}$	 	&	  		&   	\\
+		K40		& 	$2.88\times10^{-5}$		&	$2\times10^{-5}$	 	&	  		&   	\\
 	Total (mHz)	&	0.002		&	0.0001	 	&	0.04  	& 0.001 \\
 		\hline
 	\end{tabular*}
@@ -598,29 +539,26 @@ The total rate of background from calibration system is about ?? mHz, which meet
 \begin{table}[h]
 	\centering
 	\caption{List of summary}
-	\begin{tabular}{c|c|c|c}
+	\begin{tabular}{c|c|c}
 	    \hline
-		System & Item & Rate (mHz) & Err (mHz)\\
+		System & Item & Rate (mHz)\\
 	    \hline
 	    \multirow{2}*{CLS} 
-		&	cable 	& 9.01  & 5.92\\
-	    &	anchor	& 0.015 & 0.0015\\ \hline
-		\multirow{3}*{GTCS}	
-	    & tube		& 2.602 & 0.052 \\ 
-	    & cable 	& 1.329 & 0.098 \\ 
-	    & sensor 	& 74.294 & 9.789 \\ 
-		\hline
+		&	cable & 9.390\\
+	    &	anchor& 0.083\\ \hline
 		\multirow{2}*{USS}
-	    & receiver 	& 1.258  & 0.345  \\ 
-	    & cable 	& 20.806 & 22.477 \\ 
-		\hline
-		CCD & camera & 0.04  & - \\
-		\hline
+	    & cable 	& 3.344 \\ 
+	    & receiver 	& 0.987 \\ \hline
+		\multirow{3}*{GTCS}	
+	    & tube		& 2.593 \\ 
+	    & cable 	& 1.331 \\ 
+	    & sensor 	& 63.38 \\ \hline
+		CCD & camera & 0.04 \\
         \multirow{3}*{AURARO}
-        & termination      	& 0.002 & 0.0001\\
-        & cable    			& 0.040 & -\\
-        & fiber    			& 0.001 & -\\ \hline
-		Total & & 109.397 & 25.223\\ 
+        & termination      	& 0.002 \\
+        & cable    			& 0.040 \\
+        & fiber    			& 0.001 \\ \hline
+		Total & & 81.2\\ 
 		\hline
 
 	\end{tabular}
@@ -636,8 +574,5 @@ The degeneration of MH sensitivity due to calibration system background is about
 
 \section{Acknowledgement}
 \section*{References}
-%\bibliography{mybibfile}
-\begin{thebibliography}{90}
-\bibitem{SNIPER}Lin, Tao et al., J.Phys.Conf.Ser. 898 no.4, 042029, arXiv:1702.05275 (2017)
-\end{thebibliography}
+\bibliography{mybibfile}
 \end{document}

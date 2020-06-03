@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.28)  1 JUN 2020 17:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.8.28)  3 JUN 2020 23:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1054,160 +1054,190 @@ Overfull \hbox (2.22221pt too wide) has occurred while \output is active
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 100.
+(hyperref)                removing `\<def>-command' on input line 103.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\cnotenum' on input line 100.
+(hyperref)                removing `\cnotenum' on input line 103.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 100.
+(hyperref)                removing `\<def>-command' on input line 103.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@corref' on input line 100.
+(hyperref)                removing `\@corref' on input line 103.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 100.
+(hyperref)                removing `\<let>-command' on input line 103.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\comma' on input line 100.
+(hyperref)                removing `\comma' on input line 103.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 100.
+(hyperref)                removing `\<def>-command' on input line 103.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@fnmark' on input line 100.
+(hyperref)                removing `\@fnmark' on input line 103.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 100.
+(hyperref)                removing `\<def>-command' on input line 103.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\cnotenum' on input line 100.
+(hyperref)                removing `\cnotenum' on input line 103.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 100.
+(hyperref)                removing `\<def>-command' on input line 103.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@corref' on input line 100.
+(hyperref)                removing `\@corref' on input line 103.
 
 [1
 
 
-{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
+{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 133--139
+
+ []
+
+[2]
 <calib_systems.pdf, id=136, 453.695pt x 739.76375pt>
 File: calib_systems.pdf Graphic file (type pdf)
 <use calib_systems.pdf>
-Package pdftex.def Info: calib_systems.pdf  used on input line 136.
+Package pdftex.def Info: calib_systems.pdf  used on input line 154.
 (pdftex.def)             Requested size: 216.81pt x 353.51355pt.
- [3 <./calib_systems.pdf>] [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 224--228
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[3] [4 <./calib_systems.pdf>] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 249--253
 
  []
 
 
-Overfull \hbox (81.79134pt too wide) in paragraph at lines 236--253
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 261--278
  [] 
  []
 
 [6]
-<U238_USS_receiver.png, id=199, 516.42938pt x 333.49594pt>
+<U238_USS_receiver.png, id=201, 516.42938pt x 333.49594pt>
 File: U238_USS_receiver.png Graphic file (type png)
 <use U238_USS_receiver.png>
-Package pdftex.def Info: U238_USS_receiver.png  used on input line 261.
+Package pdftex.def Info: U238_USS_receiver.png  used on input line 294.
 (pdftex.def)             Requested size: 216.81pt x 140.01135pt.
  [7 <./U238_USS_receiver.png>]
-<USS_Cable_PCB_Ni.png, id=208, 770.88pt x 1027.84pt>
+Underfull \hbox (badness 10000) in alignment at lines 365--384
+[][][][][][] 
+ []
+
+
+Overfull \hbox (10.65944pt too wide) in paragraph at lines 365--385
+ [][] 
+ []
+
+[8]
+<USS_Cable_PCB_Ni.png, id=220, 770.88pt x 1027.84pt>
 File: USS_Cable_PCB_Ni.png Graphic file (type png)
 <use USS_Cable_PCB_Ni.png>
-Package pdftex.def Info: USS_Cable_PCB_Ni.png  used on input line 299.
-(pdftex.def)             Requested size: 216.81pt x 289.07928pt.
- [8 <./USS_Cable_PCB_Ni.png>]
-Underfull \hbox (badness 10000) in alignment at lines 327--337
+Package pdftex.def Info: USS_Cable_PCB_Ni.png  used on input line 407.
+(pdftex.def)             Requested size: 144.54pt x 192.71953pt.
+
+Overfull \hbox (1.31474pt too wide) in alignment at lines 436--456
+[][][][][][][][][][] 
+ []
+
+[9 <./USS_Cable_PCB_Ni.png>]
+Underfull \hbox (badness 10000) in alignment at lines 481--491
 [][][][][] 
  []
 
 
-Overfull \hbox (7.95872pt too wide) in alignment at lines 372--383
+Overfull \hbox (7.95872pt too wide) in alignment at lines 525--536
 [][][][][][][] 
  []
 
 
-Overfull \hbox (10.65944pt too wide) in paragraph at lines 372--384
+Overfull \hbox (10.65944pt too wide) in paragraph at lines 525--537
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 392--403
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in alignment at lines 545--556
 [][][][][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[9]
-Underfull \hbox (badness 10000) in alignment at lines 413--423
+
+Underfull \hbox (badness 10000) in alignment at lines 566--576
 [][][][][] 
  []
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 [10]
-No file The_Background_of_JUNO_Calibration_System.bbl.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 AED: lastpage setting LastPage
-[11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 484.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 484.
+[11] [12]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 643.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 643.
  (./The_Background_of_JUNO_Calibration_System.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 484.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 484.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 643.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 643.
+Package rerunfilecheck Info: File `The_Background_of_JUNO_Calibration_System.ou
+t' has not changed.
+(rerunfilecheck)             Checksum: C59E76525576D130E7F19C4EF9510661;1771.
 
 
-Package rerunfilecheck Warning: File `The_Background_of_JUNO_Calibration_System
-.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: Checksums for `The_Background_of_JUNO_Calibration_
-System.out':
-(rerunfilecheck)             Before: 752FE2EAB1C69946F29075C8B5E4FFB8;1784
-(rerunfilecheck)             After:  CC41671693BD75310BC768500506F5BA;1784.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 484.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 643.
  ) 
 Here is how much of TeX's memory you used:
- 21736 strings out of 492623
- 393829 string characters out of 6133290
- 443685 words of memory out of 5000000
- 25363 multiletter control sequences out of 15000+600000
+ 21744 strings out of 492623
+ 393948 string characters out of 6133290
+ 451732 words of memory out of 5000000
+ 25367 multiletter control sequences out of 15000+600000
  549012 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,9n,63p,838b,790s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,9n,63p,754b,801s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
 live/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2019/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
-<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texliv
-e/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2019/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmti8.pfb>
-Output written on The_Background_of_JUNO_Calibration_System.pdf (11 pages, 3892
-27 bytes).
+t/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2019/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pf
+b><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texli
+ve/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2019/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2019/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy6.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
+Output written on The_Background_of_JUNO_Calibration_System.pdf (12 pages, 4202
+92 bytes).
 PDF statistics:
- 293 PDF objects out of 1000 (max. 8388607)
- 234 compressed objects within 3 object streams
- 49 named destinations out of 1000 (max. 500000)
+ 317 PDF objects out of 1000 (max. 8388607)
+ 254 compressed objects within 3 object streams
+ 54 named destinations out of 1000 (max. 500000)
  232 words of extra memory for PDF output out of 10000 (max. 10000000)
 
